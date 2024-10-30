@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/filter_new"
+        android:title="@string/filter_new" />
+
+    <item
+        android:id="@+id/filter_used"
+        android:title="@string/filter_used" />
+
+    <item
+        android:id="@+id/filter_etext"
+        android:title="@string/filter_eText" />
+
+    <item
+        android:id="@+id/filter_physical"
+        android:title="@string/filter_physical" />
+
+    <item
+        android:id="@+id/filter_reset"
+        android:title="@string/filter_reset" />
+</menu>

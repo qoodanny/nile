@@ -1,0 +1,29 @@
+	Architecture Description
+	
+	Account verification uses the Register display and the login display, it also 
+	user persitence
+	
+	Search options uses the home display and services the item persitence
+	
+	Shopping Cart works with the cart display and services the item persistence
+	
+	Delivery options works with delivery display and Payment verification
+	
+	Payment verification works with Payment display and services purchase persistence 
+	
+	The UI pages move between each other by: 
+	
+	Login to Register or Home Display
+	
+	Register to Login
+	
+	Home display to Cart Display or Delivery Display
+	
+	Cart Display to Home Display or Delivery Display
+	
+	Delivery Display to Payment Display
+	
+	Payment Display to Home Display
+	
+	
+	

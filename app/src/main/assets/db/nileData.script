@@ -1,0 +1,39 @@
+CREATE SCHEMA PUBLIC AUTHORIZATION DBA
+CREATE MEMORY TABLE PUBLIC.ITEMLIST(ITEMNAME VARCHAR(100),ITEMDESC VARCHAR(200),ITEMDEPT VARCHAR(50),ITEMCOST DOUBLE,ISETEXT BOOLEAN,ISNEW BOOLEAN)
+CREATE MEMORY TABLE PUBLIC.USERLIST(USERNAME VARCHAR(25),USERPASS VARCHAR(25),USERMAIL VARCHAR(100),USERDEPT VARCHAR(100))
+CREATE MEMORY TABLE PUBLIC.PURCHASELIST(USERACCT VARCHAR(25),PURCHASEID VARCHAR(25),CARDNUM VARCHAR(25),CARDEXP VARCHAR(10),CARDCVC INTEGER,ITEMLIST VARCHAR(50) ARRAY[50], TOTALCOST DOUBLE, ISPICKUP BOOLEAN, ADDRESSLINE VARCHAR(100),ADDRESSCITY VARCHAR(25),ADDRESSPROVINCE VARCHAR(10),ADDRESSPOSTAL VARCHAR(10))
+CREATE USER SA PASSWORD DIGEST 'd41d8cd98f00b204e9800998ecf8427e'
+ALTER USER SA SET LOCAL TRUE
+CREATE SCHEMA PUBLIC AUTHORIZATION DBA
+SET DATABASE DEFAULT INITIAL SCHEMA PUBLIC
+GRANT DBA TO SA
+SET WRITE_DELAY 20
+SET FILES SCALE 32
+SET SCHEMA PUBLIC
+INSERT INTO USERLIST VALUES('Team14',   '!Password123',     'Team14@umanitoba.ca',      'Computer Science')
+INSERT INTO USERLIST VALUES('Kyle',     '!Password123',     'Kyle@myumanitoba.ca',      'Computer Science')
+INSERT INTO USERLIST VALUES('Danny',    '!Password123',     'Danny@myumanitoba.ca',     'Computer Science')
+INSERT INTO USERLIST VALUES('Lucien',   '!Password123',     'Lucien@myumanitoba.ca',    'Computer Science')
+INSERT INTO USERLIST VALUES('Zen',      '!Password123',     'Zen@myumanitoba.ca',       'Computer Science')
+INSERT INTO ITEMLIST VALUES('Agenda',                           '100 page agenda booklet made from sustainable materials',  'Supplies',                 2.49E0,     FALSE,  TRUE)
+INSERT INTO ITEMLIST VALUES('Backpack',                         'Swiss 10L volume backpack',                                'Merchandise',              80.99E0,    FALSE,  TRUE)
+INSERT INTO ITEMLIST VALUES('Umanitoba Tshirt',                 'Umanitoba branded tshirt unisex',                          'Merchandise',              60.99E0,    FALSE,  TRUE)
+INSERT INTO ITEMLIST VALUES('Umanitoba Sweater',                'Umanitoba branded sweater unisex',                         'Merchandise',              60.99E0,    FALSE,  TRUE)
+INSERT INTO ITEMLIST VALUES('Chemistry: Central Science',       'General topics chemistry ebook',                           'Chemistry',                120.99E0,   TRUE,   TRUE)
+INSERT INTO ITEMLIST VALUES('Chemistry for Dummies',            'From the popular For Dummies series of textbooks',         'Chemistry',                100.99E0,   FALSE,  TRUE)
+INSERT INTO ITEMLIST VALUES('Lock',                             'Masterlock dial style',                                    'Supplies',                 10.49E0,    FALSE,  TRUE)
+INSERT INTO ITEMLIST VALUES('External HDD',                     'Used HDD buy at your own risk',                            'Supplies',                 10.99E0,    FALSE,  FALSE)
+INSERT INTO ITEMLIST VALUES('Physics and Astronomy 13th Ed.',   'Physics textbook hardcover edition with online code',      'Physics and Astronomy',    80.99E0,    FALSE,  TRUE)
+INSERT INTO ITEMLIST VALUES('Used Grant's Tutoring Statistics', 'For STATS 1000, includes notes, questions and practice',   'Statistics',               20.99E0,    FALSE,  FALSE)
+INSERT INTO ITEMLIST VALUES('Used Grant's Tutoring Mathematics','For MATH 1500, includes notes, questions and practice',    'Mathematics',              20.99E0,    FALSE,  FALSE)
+INSERT INTO ITEMLIST VALUES('Essentials of Microbiology',       'Microbiology Ebook with Sapling Learning pass',            'Microbiology',             150.99E0,   TRUE,   TRUE)
+INSERT INTO ITEMLIST VALUES('Microbiology Facts and Fallacies', 'Microbiology textbook required for 3rd Year',              'Microbiology',             150.99E0,   FALSE,  TRUE)
+INSERT INTO ITEMLIST VALUES('Engineer Engifar Notes',           'Puns, Jokes, and Notes to ease your stress',               'Merchandise',              42.00E0,    TRUE,   TRUE)
+INSERT INTO ITEMLIST VALUES('Math Intro',                       'Math 1500 textbook',                                       'Mathematics',              80.99E0,    FALSE,  TRUE)
+INSERT INTO ITEMLIST VALUES('Used Math Engineering',            'Math 2130 textbook',                                       'Mathematics',              80.99E0,    FALSE,  FALSE)
+INSERT INTO ITEMLIST VALUES('User Math Logic',                  'Math 1280 textbook',                                       'Mathematics',              80.99E0,    FALSE,  FALSE)
+INSERT INTO ITEMLIST VALUES('Biology 1000 Lab Manual',          'Lab manual required for BIOL 1000',                        'Biological Sciences',      30.99E0,    FALSE,  TRUE)
+INSERT INTO ITEMLIST VALUES('Biology 2000 Lab Manual',          'Lab manual required for BIOL 2000',                        'Biological Sciences',      40.99E0,    FALSE,  TRUE)
+INSERT INTO ITEMLIST VALUES('Computer Graphics PDF',            'PDF code for COMP 4490',                                   'Computer Science',         5.99E0,     TRUE,   TRUE)
+INSERT INTO ITEMLIST VALUES('Computer Organization PDF',        'PDF code for COMP 3350',                                   'Computer Science',         5.99E0,     TRUE,   TRUE)
+INSERT INTO ITEMLIST VALUES('Java a Tutorial',                  'Java basics interactive ebook',                            'Computer Science',         100.99E0,   TRUE,   TRUE)

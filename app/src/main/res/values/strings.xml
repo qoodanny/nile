@@ -1,0 +1,93 @@
+<resources>
+    <string name="app_name">Nile Bookstore</string>
+
+    <!-- Navigation -->
+    <string name="go_to_cart">Cart</string>
+    <string name="go_to_checkout">Checkout</string>
+    <string name="go_to_home">Home</string>
+    <string name="go_to_payment">Payment</string>
+    <string name="go_to_exit">Exit Nile</string>
+
+    <!-- Login Page -->
+    <string name="login">Log In</string>
+    <string name="signup">Sign Up</string>
+
+    <!-- Create Page -->
+    <string name="create_new_account">Create New Account</string>
+    <string name="select_department">Select Department</string>
+    <string name="create">Create</string>
+
+    <string-array name="departments">
+        <item>Biological Sciences</item>
+        <item>Chemistry</item>
+        <item>Computer Science</item>
+        <item>Microbiology</item>
+        <item>Physics and Astronomy</item>
+        <item>Statistics</item>
+        <item>Mathematics</item>
+    </string-array>
+
+    <!-- Home Page -->
+    <string name="filter">Filter</string>
+    <string name="add_to_cart">Add To Cart</string>
+    <string name="item">Item</string>
+    <string name="price">Price</string>
+    <string name="description">Description</string>
+    <string name="condition">Condition</string>
+    <string name="etext">Etext</string>
+
+    <!-- Filter Menu -->
+    <string name="filter_used">Show All Used</string>
+    <string name="filter_new">Show All New</string>
+    <string name="filter_eText">Show E-Text Only</string>
+    <string name="filter_physical">Show Physical Only</string>
+    <string name="filter_reset">Reset Filter</string>
+
+    <!-- Cart -->
+    <string name="cart_title">Your Shopping Cart</string>
+    <string name="cart_total">Total</string>
+    <string name="cart_count">Item Count</string>
+    <string name="cart_inc_item">Add</string>
+    <string name="cart_rem_item">Remove</string>
+    <string name="title_activity_cart">CartActivity</string>
+
+    <!-- Delivery Options -->
+    <string name="delivery_title">Delivery Options</string>
+    <string name="delivery_title_details">Input Details</string>
+    <string name="delivery_select_province">Select Province</string>
+    <string name="delivery_pickup">Pickup</string>
+    <string name="delivery_delivery">Delivery</string>
+    <string name="delivery_own_email">Use Custom Email</string>
+    <string name="delivery_acct_email">Use Account Email</string>
+    <string name="delivery_estimate">Estimated Delivery Time</string>
+
+    <string-array name="provinces">
+        <item>Province</item>
+        <item>AB</item>
+        <item>BC</item>
+        <item>MB</item>
+        <item>NB</item>
+        <item>NL</item>
+        <item>NS</item>
+        <item>NT</item>
+        <item>NU</item>
+        <item>ON</item>
+        <item>PE</item>
+        <item>QC</item>
+        <item>SK</item>
+        <item>YT</item>
+    </string-array>
+
+    <!-- Payment -->
+    <string name="payment_title">Payment Details</string>
+    <string name="payment_process">Pay Now</string>
+    <string name="payment_cardExp">Card Expiry</string>
+    <string name="payment_cardCVC">Card CVC</string>
+
+    <string name="payment_success_title">Payment Successful!</string>
+    <string name="payment_success_items">Purchased Items</string>
+    <string name="payment_success_delivered">Shipped To</string>
+    <string name="payment_success_pickup">Pickup At</string>
+    <string name="payment_success_cardNum">Card Number</string>
+
+</resources>
